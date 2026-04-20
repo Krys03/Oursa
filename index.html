@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oursa.ch | Comparez vos assurances en quelques clics</title>
+    <meta
+      name="description"
+      content="Comparez vos assurances en Suisse avec Oursa.ch : caisse-maladie, complémentaire, auto, habitation, crédit et animaux."
+    />
+    <script>
+      try {
+        if (localStorage.getItem("oursa-theme") === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        }
+      } catch (error) {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="furets-inspired.css" />
+  </head>
+  <body>
+    <div class="comparator-page">
+      <header class="compare-header">
+        <div class="compare-header__inner">
+          <a class="compare-brand" href="#" aria-label="Oursa.ch">
+            <span class="compare-brand__wordmark">Oursa</span>
+            <span class="compare-brand__tld">.ch</span>
+          </a>
+
+          <nav class="compare-nav" aria-label="Navigation principale">
+            <a href="#hero">Assurances</a>
+            <a href="#hero">Caisse-maladie</a>
+            <a href="#hero">Complémentaire</a>
+            <a href="#hero">Crédit</a>
+            <a href="#guides">Guides</a>
+          </nav>
+
+          <div class="compare-header__actions">
+            <div class="compare-language" aria-label="Choisir la langue">
+              <button class="compare-language__current" type="button" aria-haspopup="true" aria-expanded="false">
+                FR
+                <span aria-hidden="true">⌄</span>
+              </button>
+              <div class="compare-language__menu">
+                <a href="#" aria-current="true">FR</a>
+                <a href="#">DE</a>
+                <a href="#">EN</a>
+                <a href="#">IT</a>
+              </div>
+            </div>
+            <button
+              class="compare-theme-toggle"
+              type="button"
+              aria-pressed="false"
+              aria-label="Activer le mode nuit"
+              data-theme-toggle
+            >
+              <span aria-hidden="true">◐</span>
+              <span>Night mode</span>
+            </button>
+            <a class="compare-login" href="#hero">Me connecter</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="compare-alert">
+        <div class="compare-alert__inner">
+          <p>
+            Oursa ne vous demandera jamais vos coordonnées bancaires pour ouvrir un nouveau contrat.
+            <a href="#hero">En savoir plus.</a>
+          </p>
+          <button type="button" aria-label="Fermer l’alerte">×</button>
+        </div>
+      </div>
+
+      <main>
+        <section class="compare-hero" id="hero">
+          <div class="compare-hero__inner">
+            <div class="compare-hero__copy">
+              <p class="compare-hero__eyebrow">
+                <span></span>
+                Oursa compare, vous choisissez
+              </p>
+              <h1>
+                <span>Comparez vos assurances</span>
+                <span>en quelques clics.</span>
+              </h1>
+
+              <div class="compare-grid" aria-label="Types d’assurance">
+                <a class="compare-tile" href="#hero">
+                  <div class="compare-tile__icon compare-tile__icon--auto" aria-hidden="true">
+                    <img class="compare-tile__icon-image" src="auto-3d.png" alt="" decoding="async" />
+                  </div>
+                  <h2>Assurance auto</h2>
+                  <p><strong>jusqu’à 396 CHF/an</strong> d’économies</p>
+                </a>
+
+                <a class="compare-tile" href="#hero">
+                  <div class="compare-tile__icon compare-tile__icon--moto" aria-hidden="true">
+                    <img class="compare-tile__icon-image" src="complementaire-3d.png" alt="" decoding="async" />
+                  </div>
+                  <h2>Assurance complémentaire</h2>
+                  <p><strong>jusqu’à 223 CHF/an</strong> d’économies</p>
+                </a>
+
+                <a class="compare-tile" href="#hero">
+                  <div class="compare-tile__icon compare-tile__icon--health" aria-hidden="true">
+                    <img class="compare-tile__icon-image" src="caisse-maladie-3d.png" alt="" decoding="async" />
+                  </div>
+                  <h2>Caisse-maladie</h2>
+                  <p><strong>jusqu’à 416 CHF/an</strong> d’économies</p>
+                </a>
+
+                <a class="compare-tile" href="#hero">
+                  <div class="compare-tile__icon compare-tile__icon--home" aria-hidden="true">
+                    <img class="compare-tile__icon-image" src="home-3d.png" alt="" decoding="async" />
+                  </div>
+                  <h2>Assurance habitation</h2>
+                  <p><strong>jusqu’à 480 CHF/an</strong> d’économies</p>
+                </a>
+
+                <a class="compare-tile" href="#hero">
+                  <div class="compare-tile__icon compare-tile__icon--credit" aria-hidden="true">
+                    <img class="compare-tile__icon-image" src="credit-3d.png" alt="" decoding="async" />
+                  </div>
+                  <h2>Crédit</h2>
+                  <p><strong>comparez vos options</strong> simplement</p>
+                </a>
+
+                <a class="compare-tile" href="#hero">
+                  <div class="compare-tile__icon compare-tile__icon--utility" aria-hidden="true">
+                    <img class="compare-tile__icon-image" src="animaux-3d.png" alt="" decoding="async" />
+                  </div>
+                  <h2>Assurance animaux</h2>
+                  <p><strong>chiens & chats</strong> couverts</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="compare-hero__stage" aria-hidden="true">
+              <div class="compare-hero__oursa">
+                <img class="compare-hero__oursa-image" src="oursa-bear-hero.png" alt="" decoding="async" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="compare-partners-band" aria-label="Nos partenaires">
+          <div class="compare-partners-band__inner">
+            <div class="compare-carousel compare-carousel--band" data-hero-carousel>
+              <div class="compare-carousel__track" aria-label="Assureurs suisses" data-hero-track>
+                <a class="compare-brand-logo compare-brand-logo--featured compare-brand-logo--image compare-brand-logo--helsana" href="#offers" aria-label="Helsana">
+                  <img class="compare-brand-logo__image" src="./Helsana.svg" alt="Helsana" />
+                </a>
+                <a class="compare-brand-logo compare-brand-logo--image" href="#offers" aria-label="AXA">
+                  <img class="compare-brand-logo__image" src="./Axa.svg" alt="AXA" />
+                </a>
+                <a class="compare-brand-logo compare-brand-logo--image" href="#offers" aria-label="Zurich">
+                  <img class="compare-brand-logo__image" src="./Zurich.svg" alt="Zurich" />
+                </a>
+                <a class="compare-brand-logo compare-brand-logo--image" href="#offers" aria-label="CSS">
+                  <img class="compare-brand-logo__image" src="./css.svg" alt="CSS" />
+                </a>
+                <a class="compare-brand-logo compare-brand-logo--image compare-brand-logo--groupemutuel" href="#offers" aria-label="Groupe Mutuel">
+                  <img class="compare-brand-logo__image" src="./Groupemutuel.svg" alt="Groupe Mutuel" />
+                </a>
+                <a class="compare-brand-logo compare-brand-logo--image compare-brand-logo--swica" href="#offers" aria-label="SWICA">
+                  <img class="compare-brand-logo__image" src="./Swica.svg" alt="SWICA" />
+                </a>
+                <a class="compare-brand-logo compare-brand-logo--image compare-brand-logo--sanitas" href="#offers" aria-label="Sanitas">
+                  <img class="compare-brand-logo__image" src="./sanitas.svg" alt="Sanitas" />
+                </a>
+                <a class="compare-brand-logo compare-brand-logo--featured compare-brand-logo--image compare-brand-logo--helsana" href="#offers" aria-hidden="true" tabindex="-1">
+                  <img class="compare-brand-logo__image" src="./Helsana.svg" alt="" />
+                </a>
+                <a class="compare-brand-logo compare-brand-logo--image" href="#offers" aria-hidden="true" tabindex="-1">
+                  <img class="compare-brand-logo__image" src="./Axa.svg" alt="" />
+                </a>
+                <a class="compare-brand-logo compare-brand-logo--image" href="#offers" aria-hidden="true" tabindex="-1">
+                  <img class="compare-brand-logo__image" src="./Zurich.svg" alt="" />
+                </a>
+                <a class="compare-brand-logo compare-brand-logo--image" href="#offers" aria-hidden="true" tabindex="-1">
+                  <img class="compare-brand-logo__image" src="./css.svg" alt="" />
+                </a>
+                <a class="compare-brand-logo compare-brand-logo--image compare-brand-logo--groupemutuel" href="#offers" aria-hidden="true" tabindex="-1">
+                  <img class="compare-brand-logo__image" src="./Groupemutuel.svg" alt="" />
+                </a>
+                <a class="compare-brand-logo compare-brand-logo--image compare-brand-logo--swica" href="#offers" aria-hidden="true" tabindex="-1">
+                  <img class="compare-brand-logo__image" src="./Swica.svg" alt="" />
+                </a>
+                <a class="compare-brand-logo compare-brand-logo--image compare-brand-logo--sanitas" href="#offers" aria-hidden="true" tabindex="-1">
+                  <img class="compare-brand-logo__image" src="./sanitas.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="compare-audience">
+          <div class="compare-audience__inner">
+            <div class="compare-audience__intro">
+              <p>Des offres pour chaque profil</p>
+              <h2>Trouvez la solution pensée pour vous</h2>
+              <div class="compare-audience__lead">
+                <p>Oursa accompagne les particuliers, les familles, les indépendants et les petites entreprises pour comparer plus clairement et choisir avec confiance.</p>
+              </div>
+            </div>
+
+            <div class="compare-audience__grid">
+              <article class="compare-audience-card">
+                <div class="compare-audience-card__media compare-audience-card__media--one" aria-hidden="true"></div>
+                <div class="compare-audience-card__body">
+                  <h3>Particuliers</h3>
+                  <p>Comparez rapidement vos garanties, vos franchises et vos mensualités en une seule vue.</p>
+                </div>
+                <span class="compare-audience-card__arrow" aria-hidden="true">→</span>
+              </article>
+
+              <article class="compare-audience-card">
+                <div class="compare-audience-card__media compare-audience-card__media--two" aria-hidden="true"></div>
+                <div class="compare-audience-card__body">
+                  <h3>Familles</h3>
+                  <p>Une lecture plus simple pour arbitrer entre couverture, budget et services utiles au quotidien.</p>
+                </div>
+                <span class="compare-audience-card__arrow" aria-hidden="true">→</span>
+              </article>
+
+              <article class="compare-audience-card">
+                <div class="compare-audience-card__media compare-audience-card__media--three" aria-hidden="true"></div>
+                <div class="compare-audience-card__body">
+                  <h3>Indépendants</h3>
+                  <p>Retrouvez une approche plus claire pour protéger votre activité sans perdre du temps dans le jargon.</p>
+                </div>
+                <span class="compare-audience-card__arrow" aria-hidden="true">→</span>
+              </article>
+
+              <article class="compare-audience-card">
+                <div class="compare-audience-card__media compare-audience-card__media--four" aria-hidden="true"></div>
+                <div class="compare-audience-card__body">
+                  <h3>Petites entreprises</h3>
+                  <p>Donnez à vos équipes une vue lisible des options santé et prévoyance adaptées à votre structure.</p>
+                </div>
+                <span class="compare-audience-card__arrow" aria-hidden="true">→</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="compare-transparency" id="transparence">
+          <div class="compare-transparency__inner">
+            <div class="compare-transparency__intro">
+              <div>
+                <p>Confiance & transparence</p>
+                <h2>Comparer, oui. Comprendre pourquoi aussi.</h2>
+              </div>
+              <div class="compare-transparency__lead">
+                <p>Oursa n’est pas conçu pour pousser vers une offre au hasard. Le comparateur est pensé pour rendre les critères plus lisibles, expliquer ce qui change vraiment d’une couverture à l’autre et afficher clairement notre rôle.</p>
+              </div>
+            </div>
+
+            <div class="compare-transparency__grid">
+              <article class="compare-transparency-card">
+                <div class="compare-transparency-card__media compare-transparency-card__media--one" aria-hidden="true">
+                  <div class="compare-transparency-card__callout compare-transparency-card__callout--left">
+                    <strong>4 critères clés</strong>
+                    <span>visibles dès le premier écran</span>
+                  </div>
+                  <div class="compare-transparency-card__mock compare-transparency-card__mock--table">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <span class="compare-transparency-card__index">01</span>
+                <h3>Ce que vous comparez est rendu visible</h3>
+                <p>Prime, franchise, couverture et services utiles sont remis au même niveau pour éviter la lecture floue ou l’effet “petites lignes”.</p>
+                <span class="compare-transparency-card__source">Comparaison structurée, pas décorative</span>
+              </article>
+
+              <article class="compare-transparency-card compare-transparency-card--featured">
+                <div class="compare-transparency-card__media compare-transparency-card__media--two" aria-hidden="true">
+                  <div class="compare-transparency-card__callout compare-transparency-card__callout--center">
+                    <strong>Tri expliqué</strong>
+                    <span>ordre, logique et critères assumés</span>
+                  </div>
+                  <div class="compare-transparency-card__mock compare-transparency-card__mock--stack">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <span class="compare-transparency-card__index">02</span>
+                <h3>Quand une mise en avant existe, elle doit se comprendre</h3>
+                <p>Un résultat ne devrait jamais donner l’impression d’être sorti d’une boîte noire. Notre ambition est de rendre la logique lisible, pas opaque.</p>
+                <span class="compare-transparency-card__source">Plus de clarté, moins de soupçon</span>
+              </article>
+
+              <article class="compare-transparency-card">
+                <div class="compare-transparency-card__media compare-transparency-card__media--three" aria-hidden="true">
+                  <div class="compare-transparency-card__callout compare-transparency-card__callout--right">
+                    <strong>Mise à jour</strong>
+                    <span>source, date et contexte visibles</span>
+                  </div>
+                  <div class="compare-transparency-card__mock compare-transparency-card__mock--doc">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <span class="compare-transparency-card__index">03</span>
+                <h3>Les informations doivent pouvoir être replacées dans leur contexte</h3>
+                <p>Une donnée utile n’est pas seulement affichée. Elle est datée, replacée dans un cadre clair et présentée sans promesse trop belle pour être vraie.</p>
+                <span class="compare-transparency-card__source">Source, date, contexte : toujours plus utiles ensemble</span>
+              </article>
+            </div>
+
+            <div class="compare-transparency__note">
+              <p><strong>Notre principe</strong> : mieux vaut une comparaison claire et utile qu’un écran rempli de chiffres mal expliqués.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="compare-stack-intro">
+          <div class="compare-stack-intro__inner">
+            <p>Pourquoi Oursa</p>
+            <h2>Une lecture plus claire avant de passer à l’action.</h2>
+            <div class="compare-stack-intro__lead">
+              <p>Nous avons conçu le parcours pour que chaque étape rende la comparaison plus simple, plus compréhensible et plus rassurante.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="compare-stack" id="how-it-works" data-compare-stack>
+          <div class="compare-stack__sticky">
+            <article class="compare-panel compare-panel--rose" data-stack-card>
+              <div class="compare-panel__inner">
+                <div class="compare-heading">
+                  <p>Votre profil</p>
+                  <h2>Trouvez la solution pensée pour vous.</h2>
+                  <div class="compare-heading__lead">
+                    <p>Oursa accompagne les particuliers, les familles et les indépendants pour comparer plus clairement leur assurance.</p>
+                  </div>
+                </div>
+
+                <div class="compare-steps compare-steps--profiles">
+                  <article class="compare-step compare-step--visual">
+                    <div class="compare-step__media compare-step__media--one" aria-hidden="true"></div>
+                    <h3>Particuliers</h3>
+                    <p>Une lecture simple pour comparer vos garanties, votre franchise et vos prix sans perdre de temps.</p>
+                    <a href="#hero">Découvrir</a>
+                  </article>
+                  <article class="compare-step compare-step--visual">
+                    <div class="compare-step__media compare-step__media--two" aria-hidden="true"></div>
+                    <h3>Familles</h3>
+                    <p>Repérez plus vite les offres utiles quand plusieurs profils et besoins entrent en jeu.</p>
+                    <a href="#hero">Découvrir</a>
+                  </article>
+                  <article class="compare-step compare-step--visual">
+                    <div class="compare-step__media compare-step__media--three" aria-hidden="true"></div>
+                    <h3>Indépendants</h3>
+                    <p>Une approche plus claire pour arbitrer rapidement entre budget, couverture et sérénité au quotidien.</p>
+                    <a href="#hero">Découvrir</a>
+                  </article>
+                </div>
+              </div>
+            </article>
+
+            <article class="compare-panel compare-panel--deep" id="offers" data-stack-card>
+              <div class="compare-panel__inner">
+                <div class="compare-heading">
+                  <div>
+                    <p>Pourquoi comparer</p>
+                    <h2>Choisir son assurance ne devrait pas ressembler à un parcours du combattant.</h2>
+                    <div class="compare-heading__lead">
+                      <p>Entre garanties peu lisibles, franchises difficiles à comparer et écarts de prix importants, il est facile de s’y perdre.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="compare-offers compare-offers--stats">
+                  <article class="compare-offer">
+                    <div class="compare-offer__price">3 min</div>
+                    <h3>pour comprendre une offre</h3>
+                    <p>Une lecture synthétique des points essentiels, sans jargon ni aller-retour inutiles.</p>
+                  </article>
+                  <article class="compare-offer compare-offer--featured">
+                    <span class="compare-offer__badge">Plus clair</span>
+                    <div class="compare-offer__price">0 jargon</div>
+                    <h3>dans la comparaison</h3>
+                    <p>Les différences importantes sont rendues visibles immédiatement, pour décider avec plus de confiance.</p>
+                  </article>
+                  <article class="compare-offer">
+                    <div class="compare-offer__price">1 vue</div>
+                    <h3>pour comparer prix et garanties</h3>
+                    <p>Vous voyez l’essentiel au même endroit au lieu de naviguer entre plusieurs documents.</p>
+                  </article>
+                </div>
+              </div>
+            </article>
+
+            <article class="compare-panel compare-panel--ivory" data-stack-card>
+              <div class="compare-panel__inner compare-why compare-why--editorial">
+                <div>
+                  <div class="compare-heading">
+                    <p>Ce que change Oursa</p>
+                    <h2>Une expérience plus simple, plus lisible, plus rassurante.</h2>
+                    <div class="compare-heading__lead">
+                      <p>Nous avons conçu Oursa comme un comparateur qui aide vraiment à comprendre, pas seulement à cliquer.</p>
+                    </div>
+                  </div>
+                  <div class="compare-why__grid">
+                    <article class="compare-why__card">
+                      <h3>La clarté avant tout</h3>
+                      <p>Nous simplifions la comparaison pour vous aider à voir ce qui change vraiment d’une offre à l’autre.</p>
+                    </article>
+                    <article class="compare-why__card">
+                      <h3>Un vrai gain de temps</h3>
+                      <p>Les informations importantes sont hiérarchisées pour vous aider à décider plus vite et plus sereinement.</p>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="compare-faq">
+                  <details>
+                    <summary>Comment Oursa compare les assurances ?</summary>
+                    <p>Nous présentons les offres selon des critères concrets: prix, franchise, garanties et services inclus.</p>
+                  </details>
+                  <details>
+                    <summary>L’utilisation de Oursa.ch est-elle gratuite ?</summary>
+                    <p>Oui, la comparaison est gratuite pour l’utilisateur.</p>
+                  </details>
+                  <details>
+                    <summary>Puis-je changer d’assurance quand je veux ?</summary>
+                    <p>Cela dépend du contrat, du type d’assurance et des délais applicables.</p>
+                  </details>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="compare-insights" id="guides">
+          <div class="compare-insights__inner">
+            <div class="compare-insights__header">
+              <div>
+                <p>Conseils Oursa</p>
+                <h2>Des articles utiles, lisibles et vraiment faits pour aider à choisir.</h2>
+              </div>
+              <div class="compare-insights__lead">
+                <p>On ne publie pas du contenu pour remplir une page. On écrit des guides courts, concrets et comparables pour vous aider à comprendre ce qui compte avant de souscrire.</p>
+                <a class="compare-insights__all" href="#hero">Voir tous les articles</a>
+              </div>
+            </div>
+
+            <div class="compare-insights__topics" aria-label="Catégories de guides">
+              <span>Santé LAMal</span>
+              <span>Caisse-maladie</span>
+              <span>Habitation</span>
+              <span>Auto</span>
+              <span>Complémentaire</span>
+              <span>Crédit</span>
+              <span>Animaux</span>
+            </div>
+
+            <div class="compare-insights__grid">
+              <article class="compare-insight compare-insight--feature">
+                <div class="compare-insight__media compare-insight__media--featured" aria-hidden="true">
+                  <span class="compare-insight__pill">Guide essentiel</span>
+                  <span class="compare-insight__time">6 min</span>
+                  <div class="compare-insight__shape compare-insight__shape--one"></div>
+                  <div class="compare-insight__shape compare-insight__shape--two"></div>
+                  <div class="compare-insight__shape compare-insight__shape--three"></div>
+                  <div class="compare-insight__card-preview">
+                    <strong>LAMal</strong>
+                    <span>Comparer prix, franchise et couverture</span>
+                  </div>
+                </div>
+                <div class="compare-insight__body">
+                  <p class="compare-insight__kicker">Santé</p>
+                  <h3>LAMal ou complémentaire : que couvre vraiment chaque assurance ?</h3>
+                  <p>Un guide clair pour comprendre ce qui relève de l’assurance de base, ce qui dépend d’une complémentaire et comment éviter les doublons inutiles.</p>
+                  <a class="compare-insight__link" href="#hero">Lire l’article</a>
+                </div>
+              </article>
+
+              <div class="compare-insights__rail">
+                <article class="compare-insight compare-insight--compact">
+                  <div class="compare-insight__mini-top">
+                    <span class="compare-insight__mini-kicker">Auto</span>
+                    <span class="compare-insight__mini-time">4 min</span>
+                  </div>
+                  <h3>Comment comparer une assurance auto sans se tromper sur les garanties</h3>
+                  <p>Les critères à regarder en premier pour éviter de choisir uniquement sur le prix.</p>
+                  <a class="compare-insight__link" href="#hero">Lire l’article</a>
+                </article>
+
+                <article class="compare-insight compare-insight--compact compare-insight--offset">
+                  <div class="compare-insight__mini-top">
+                    <span class="compare-insight__mini-kicker">Habitation</span>
+                    <span class="compare-insight__mini-time">3 min</span>
+                  </div>
+                  <h3>Résilier son assurance habitation : les délais à connaître</h3>
+                  <p>Une checklist simple pour savoir quand résilier, quoi envoyer et comment éviter un trou de couverture.</p>
+                  <a class="compare-insight__link" href="#hero">Lire l’article</a>
+                </article>
+
+                <article class="compare-insight compare-insight--compact">
+                  <div class="compare-insight__mini-top">
+                    <span class="compare-insight__mini-kicker">Prévoyance</span>
+                    <span class="compare-insight__mini-time">5 min</span>
+                  </div>
+                  <h3>Franchise, prime, quote-part : comment lire une offre sans jargon</h3>
+                  <p>Le vocabulaire essentiel remis en ordre pour comparer plus vite et décider plus sereinement.</p>
+                  <a class="compare-insight__link" href="#hero">Lire l’article</a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="compare-section compare-section--cta">
+          <div class="compare-section__inner">
+            <div class="compare-cta-showcase">
+              <div class="compare-cta-showcase__content">
+                <p>Prêt à comparer ?</p>
+                <h2>Une comparaison en quelques instants. Une décision plus sereine à chaque instant.</h2>
+                <div class="compare-cta-showcase__lead">
+                  <p>Comparez vos assurances plus clairement, comprenez les vraies différences et choisissez sans perdre de temps.</p>
+                </div>
+                <div class="compare-cta-showcase__actions">
+                  <a class="compare-button" href="#hero">Je compare maintenant</a>
+                  <a class="compare-button compare-button--ghost" href="#how-it-works">Découvrir le service</a>
+                </div>
+              </div>
+
+              <div class="compare-cta-showcase__visual" aria-hidden="true">
+                <div class="compare-cta-showcase__glow compare-cta-showcase__glow--left"></div>
+                <div class="compare-cta-showcase__glow compare-cta-showcase__glow--right"></div>
+                <div class="compare-cta-showcase__peek">
+                  <img class="compare-cta-showcase__bear-image" src="oursa-bear-peek-footer.png" alt="" decoding="async" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="compare-footer">
+        <div class="compare-footer__inner">
+          <div class="compare-footer__brand">
+            <a class="compare-brand" href="#" aria-label="Oursa.ch">
+              <span class="compare-brand__wordmark">Oursa</span>
+              <span class="compare-brand__tld">.ch</span>
+            </a>
+            <p>Comparez vos assurances plus simplement, avec une lecture claire des garanties, des prix et des options utiles.</p>
+            <div class="compare-footer__contact">
+              <a href="mailto:hello@oursa.ch">hello@oursa.ch</a>
+              <span>Lausanne, Suisse</span>
+            </div>
+          </div>
+
+          <div class="compare-footer__column">
+            <h3>Assurances</h3>
+            <a href="#hero">Santé LAMal</a>
+            <a href="#hero">Caisse-maladie</a>
+            <a href="#hero">Complémentaire</a>
+            <a href="#hero">Habitation</a>
+            <a href="#hero">Auto</a>
+            <a href="#hero">Animaux</a>
+          </div>
+
+          <div class="compare-footer__column">
+            <h3>Comparer</h3>
+            <a href="#how-it-works">Comment ça marche</a>
+            <a href="#offers">Nos offres</a>
+            <a href="#hero">Nos partenaires</a>
+            <a href="#hero">Guides</a>
+          </div>
+
+          <div class="compare-footer__column">
+            <h3>Oursa</h3>
+            <a href="#hero">À propos</a>
+            <a href="#hero">Contact</a>
+            <a href="#hero">Mentions légales</a>
+            <a href="#hero">Confidentialité</a>
+          </div>
+        </div>
+
+        <div class="compare-footer__bottom">
+          <div class="compare-footer__bottom-inner">
+            <p>© 2026 Oursa.ch. Tous droits réservés.</p>
+            <div class="compare-footer__legal">
+              <a href="#hero">Mentions légales</a>
+              <a href="#hero">Confidentialité</a>
+              <a href="#hero">Cookies</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
