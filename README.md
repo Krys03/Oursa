@@ -8,10 +8,12 @@ Site statique Oursa.ch prêt pour GitHub Pages.
 2. Mettre les fichiers de ce dossier à la racine du repository.
 3. Dans GitHub : `Settings` -> `Pages`.
 4. Choisir `Deploy from a branch`.
-5. Sélectionner la branche `main` et le dossier `/root`.
+5. Sélectionner la branche `gh-pages` et le dossier `/root`.
 6. Sauvegarder.
 
 GitHub Pages servira automatiquement `index.html`.
+
+Le site est actuellement publié ici : https://krys03.github.io/Oursa/
 
 ## Fichiers principaux
 
