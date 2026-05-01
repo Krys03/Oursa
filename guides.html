@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oursa.ch | Guides clairs pour mieux comprendre vos assurances</title>
+    <meta
+      name="description"
+      content="Retrouvez les guides Oursa pour comprendre la caisse-maladie, l’assurance habitation, l’auto, la complémentaire et plus encore avant de comparer."
+    />
+    <script>
+      try {
+        if (localStorage.getItem("oursa-theme") === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        }
+      } catch (error) {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="furets-inspired.css" />
+  </head>
+  <body>
+    <div class="comparator-page guides-page">
+      <header class="compare-header">
+        <div class="compare-header__inner">
+          <a class="compare-brand" href="index.html" aria-label="Oursa.ch">
+            <span class="compare-brand__wordmark">Oursa</span>
+            <span class="compare-brand__tld">.ch</span>
+          </a>
+
+          <nav class="compare-nav" aria-label="Navigation principale">
+            <div class="compare-nav__item">
+              <a class="compare-nav__trigger" href="index.html#hero">Assurances</a>
+              <div class="compare-nav__panel">
+                <div class="compare-nav__panel-head">
+                  <p class="compare-nav__eyebrow">Univers Oursa</p>
+                  <h3>Trouvez l’offre pensée pour vous.</h3>
+                  <p>Comparez les protections essentielles avec un parcours clair, rapide et rassurant.</p>
+                </div>
+                <div class="compare-nav__panel-grid">
+                  <div class="compare-nav__column">
+                    <p class="compare-nav__section-title">Les essentiels</p>
+                    <div class="compare-nav__link-list">
+                      <a class="compare-nav__link" href="#hero">
+                        <span class="compare-nav__link-mark"></span>
+                        <span><strong>Assurance auto</strong><small>Tarifs, franchises et garanties au même endroit.</small></span>
+                      </a>
+                      <a class="compare-nav__link" href="#hero">
+                        <span class="compare-nav__link-mark"></span>
+                        <span><strong>Assurance habitation</strong><small>Comparer ce qui protège vraiment votre logement.</small></span>
+                      </a>
+                      <a class="compare-nav__link" href="#hero">
+                        <span class="compare-nav__link-mark"></span>
+                        <span><strong>Caisse-maladie</strong><small>Les modèles LAMal et la franchise sans jargon.</small></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="compare-nav__column">
+                    <p class="compare-nav__section-title">Besoin spécifique</p>
+                    <div class="compare-nav__link-list">
+                      <a class="compare-nav__link" href="#hero">
+                        <span class="compare-nav__link-mark"></span>
+                        <span><strong>Complémentaire</strong><small>Hospitalisation, dentaire, optique et plus.</small></span>
+                      </a>
+                      <a class="compare-nav__link" href="#hero">
+                        <span class="compare-nav__link-mark"></span>
+                        <span><strong>Assurance animaux</strong><small>Pour chiens et chats, avec lecture simple des garanties.</small></span>
+                      </a>
+                      <a class="compare-nav__link" href="#hero">
+                        <span class="compare-nav__link-mark"></span>
+                        <span><strong>Crédit</strong><small>Une vue lisible des coûts, mensualités et options.</small></span>
+                      </a>
+                    </div>
+                  </div>
+                  <a class="compare-nav__spotlight" href="#hero">
+                    <p class="compare-nav__spotlight-eyebrow">Parcours rapide</p>
+                    <strong>Répondez à quelques questions et voyez les options adaptées.</strong>
+                    <span>Un comparatif lisible, sans détour et sans surcharge.</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="compare-nav__item">
+              <a class="compare-nav__trigger" href="comparer.html">Comparer</a>
+              <div class="compare-nav__panel">
+                <div class="compare-nav__panel-head">
+                  <p class="compare-nav__eyebrow">Score Oursa</p>
+                  <h3>Un espace dédié pour comparer sans bruit autour.</h3>
+                  <p>Choisissez deux assureurs, voyez les écarts utiles et comprenez la logique derrière le score Oursa.</p>
+                </div>
+                <div class="compare-nav__panel-grid">
+                  <div class="compare-nav__column">
+                    <p class="compare-nav__section-title">Dans cette page</p>
+                    <div class="compare-nav__link-list">
+                      <a class="compare-nav__link" href="comparer.html#compare-reviews">
+                        <span class="compare-nav__link-mark"></span>
+                        <span><strong>Comparer deux assureurs</strong><small>Scores, critères et lecture instantanée.</small></span>
+                      </a>
+                      <a class="compare-nav__link" href="comparer.html#compare-reviews">
+                        <span class="compare-nav__link-mark"></span>
+                        <span><strong>Sentiment des avis</strong><small>Positif, neutre et négatif avec volume de retours.</small></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="compare-nav__column">
+                    <p class="compare-nav__section-title">Confiance</p>
+                    <div class="compare-nav__link-list">
+                      <a class="compare-nav__link" href="comparer.html#compare-methodology">
+                        <span class="compare-nav__link-mark"></span>
+                        <span><strong>Méthodologie</strong><small>Comment Oursa construit ses repères et ses scores.</small></span>
+                      </a>
+                      <a class="compare-nav__link" href="#guides-library">
+                        <span class="compare-nav__link-mark"></span>
+                        <span><strong>Guides liés</strong><small>Prolongez la comparaison avec des contenus utiles.</small></span>
+                      </a>
+                    </div>
+                  </div>
+                  <a class="compare-nav__spotlight" href="comparer.html#compare-reviews">
+                    <p class="compare-nav__spotlight-eyebrow">Page dédiée</p>
+                    <strong>Le bon format pour rendre le Score Oursa plus crédible, plus lisible et plus scalable.</strong>
+                    <span>On garde la home orientée conversion, et ici on prend le temps d’expliquer.</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="compare-nav__item">
+              <a class="compare-nav__trigger" href="index.html#hero">Caisse-maladie</a>
+              <div class="compare-nav__panel">
+                <div class="compare-nav__panel-head">
+                  <p class="compare-nav__eyebrow">LAMal</p>
+                  <h3>Comprendre la caisse-maladie sans stress.</h3>
+                  <p>On met en avant ce qui change vraiment sur votre prime, votre franchise et votre modèle.</p>
+                </div>
+                <div class="compare-nav__panel-grid">
+                  <div class="compare-nav__column">
+                    <p class="compare-nav__section-title">Les bases</p>
+                    <div class="compare-nav__link-list">
+                      <a class="compare-nav__link" href="#hero"><span class="compare-nav__link-mark"></span><span><strong>Franchise</strong><small>Comparer l’impact réel entre 300 et 2500 CHF.</small></span></a>
+                      <a class="compare-nav__link" href="#hero"><span class="compare-nav__link-mark"></span><span><strong>Modèles</strong><small>Médecin de famille, HMO ou télémédecine.</small></span></a>
+                      <a class="compare-nav__link" href="#hero"><span class="compare-nav__link-mark"></span><span><strong>Subside</strong><small>Voir rapidement si une aide peut s’appliquer.</small></span></a>
+                    </div>
+                  </div>
+                  <div class="compare-nav__column">
+                    <p class="compare-nav__section-title">Moments de vie</p>
+                    <div class="compare-nav__link-list">
+                      <a class="compare-nav__link" href="#guides-library"><span class="compare-nav__link-mark"></span><span><strong>Changer d’assureur</strong><small>Les étapes et délais pour changer sereinement.</small></span></a>
+                      <a class="compare-nav__link" href="#guides-library"><span class="compare-nav__link-mark"></span><span><strong>Famille</strong><small>Optimiser la couverture pour plusieurs profils.</small></span></a>
+                      <a class="compare-nav__link" href="#guides-library"><span class="compare-nav__link-mark"></span><span><strong>Jeunes adultes</strong><small>Les bons repères pour éviter les mauvais choix.</small></span></a>
+                    </div>
+                  </div>
+                  <a class="compare-nav__spotlight" href="#hero">
+                    <p class="compare-nav__spotlight-eyebrow">Lecture claire</p>
+                    <strong>Prime, franchise, modèle: tout ce qui compte, sans jargon administratif.</strong>
+                    <span>Une approche pensée pour décider plus sereinement.</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="compare-nav__item">
+              <a class="compare-nav__trigger" href="index.html#hero">Complémentaire</a>
+              <div class="compare-nav__panel">
+                <div class="compare-nav__panel-head">
+                  <p class="compare-nav__eyebrow">Couverture en plus</p>
+                  <h3>Choisissez ce qui mérite vraiment d’être complété.</h3>
+                  <p>Identifiez les options utiles selon vos habitudes, sans payer pour des garanties invisibles.</p>
+                </div>
+                <div class="compare-nav__panel-grid">
+                  <div class="compare-nav__column">
+                    <p class="compare-nav__section-title">Couvertures clés</p>
+                    <div class="compare-nav__link-list">
+                      <a class="compare-nav__link" href="#hero"><span class="compare-nav__link-mark"></span><span><strong>Hospitalisation</strong><small>Privé, semi-privé et alternatives à comparer.</small></span></a>
+                      <a class="compare-nav__link" href="#hero"><span class="compare-nav__link-mark"></span><span><strong>Dentaire</strong><small>Voir vite si le rapport coût / usage est cohérent.</small></span></a>
+                      <a class="compare-nav__link" href="#hero"><span class="compare-nav__link-mark"></span><span><strong>Optique</strong><small>Lunettes, lentilles et fréquence réelle d’utilisation.</small></span></a>
+                    </div>
+                  </div>
+                  <div class="compare-nav__column">
+                    <p class="compare-nav__section-title">Selon votre profil</p>
+                    <div class="compare-nav__link-list">
+                      <a class="compare-nav__link" href="#guides-library"><span class="compare-nav__link-mark"></span><span><strong>Je voyage souvent</strong><small>Ce qui vaut la peine pour l’étranger.</small></span></a>
+                      <a class="compare-nav__link" href="#guides-library"><span class="compare-nav__link-mark"></span><span><strong>Famille active</strong><small>Comparer les options qui servent vraiment au quotidien.</small></span></a>
+                      <a class="compare-nav__link" href="#guides-library"><span class="compare-nav__link-mark"></span><span><strong>Médecines douces</strong><small>Lire les exclusions et plafonds en un coup d’œil.</small></span></a>
+                    </div>
+                  </div>
+                  <a class="compare-nav__spotlight" href="#hero">
+                    <p class="compare-nav__spotlight-eyebrow">Ce qui change tout</p>
+                    <strong>On hiérarchise les garanties pour vous aider à voir l’utile avant le marketing.</strong>
+                    <span>Un tri plus net, plus moderne, plus actionnable.</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="compare-nav__item">
+              <a class="compare-nav__trigger" href="index.html#hero">Crédit</a>
+              <div class="compare-nav__panel">
+                <div class="compare-nav__panel-head">
+                  <p class="compare-nav__eyebrow">Crédit</p>
+                  <h3>Comparez le coût total, pas juste la promesse.</h3>
+                  <p>Mensualités, durée, coût global: on remet les vrais repères au centre de la décision.</p>
+                </div>
+                <div class="compare-nav__panel-grid">
+                  <div class="compare-nav__column">
+                    <p class="compare-nav__section-title">Comparer</p>
+                    <div class="compare-nav__link-list">
+                      <a class="compare-nav__link" href="#hero"><span class="compare-nav__link-mark"></span><span><strong>Prêt personnel</strong><small>Une lecture simple des montants, durées et mensualités.</small></span></a>
+                      <a class="compare-nav__link" href="#hero"><span class="compare-nav__link-mark"></span><span><strong>Budget</strong><small>Voir ce qui reste soutenable avant de s’engager.</small></span></a>
+                      <a class="compare-nav__link" href="#hero"><span class="compare-nav__link-mark"></span><span><strong>Coût total</strong><small>Comparer ce qui est réellement payé au final.</small></span></a>
+                    </div>
+                  </div>
+                  <div class="compare-nav__column">
+                    <p class="compare-nav__section-title">À connaître</p>
+                    <div class="compare-nav__link-list">
+                      <a class="compare-nav__link" href="#guides-library"><span class="compare-nav__link-mark"></span><span><strong>Regroupement</strong><small>Quand ça aide vraiment, et quand ça n’aide pas.</small></span></a>
+                      <a class="compare-nav__link" href="#guides-library"><span class="compare-nav__link-mark"></span><span><strong>Critères</strong><small>Les éléments qui pèsent dans l’acceptation du dossier.</small></span></a>
+                      <a class="compare-nav__link" href="#guides-library"><span class="compare-nav__link-mark"></span><span><strong>Bonnes pratiques</strong><small>Comparer sans se faire piéger par une simple accroche.</small></span></a>
+                    </div>
+                  </div>
+                  <a class="compare-nav__spotlight" href="#hero">
+                    <p class="compare-nav__spotlight-eyebrow">Vision claire</p>
+                    <strong>Notre approche privilégie le coût réel et la lisibilité avant la vitesse.</strong>
+                    <span>Utile pour comparer plus proprement, sans brouillard commercial.</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="compare-nav__item">
+              <a class="compare-nav__trigger compare-nav__trigger--active" href="guides.html" aria-current="page">Guides</a>
+              <div class="compare-nav__panel">
+                <div class="compare-nav__panel-head">
+                  <p class="compare-nav__eyebrow">Ressources</p>
+                  <h3>Des guides utiles pour comprendre avant de cliquer.</h3>
+                  <p>Retrouvez des repères concrets pour comparer plus intelligemment, à votre rythme.</p>
+                </div>
+                <div class="compare-nav__panel-grid">
+                  <div class="compare-nav__column">
+                    <p class="compare-nav__section-title">À lire</p>
+                    <div class="compare-nav__link-list">
+                      <a class="compare-nav__link" href="#guides-library"><span class="compare-nav__link-mark"></span><span><strong>Changer de caisse-maladie</strong><small>Les délais importants et les bons réflexes.</small></span></a>
+                      <a class="compare-nav__link" href="#guides-library"><span class="compare-nav__link-mark"></span><span><strong>Franchise 300 ou 2500</strong><small>Comparer selon votre vraie consommation de soins.</small></span></a>
+                      <a class="compare-nav__link" href="#guides-library"><span class="compare-nav__link-mark"></span><span><strong>Assurance habitation</strong><small>Ce qu’il faut regarder avant le prix seul.</small></span></a>
+                    </div>
+                  </div>
+                  <div class="compare-nav__column">
+                    <p class="compare-nav__section-title">Formats pratiques</p>
+                    <div class="compare-nav__link-list">
+                      <a class="compare-nav__link" href="#guides-essentials"><span class="compare-nav__link-mark"></span><span><strong>Checklists</strong><small>Des listes rapides pour ne rien oublier.</small></span></a>
+                      <a class="compare-nav__link" href="#guides-essentials"><span class="compare-nav__link-mark"></span><span><strong>Décryptages</strong><small>On simplifie les termes et clauses essentielles.</small></span></a>
+                      <a class="compare-nav__link" href="#guides-essentials"><span class="compare-nav__link-mark"></span><span><strong>Comparatifs</strong><small>Des contenus pensés pour décider plus vite et mieux.</small></span></a>
+                    </div>
+                  </div>
+                  <a class="compare-nav__spotlight" href="#guides-library">
+                    <p class="compare-nav__spotlight-eyebrow">Éditorial</p>
+                    <strong>Des contenus plus clairs, plus courts et plus utiles pour passer à l’action.</strong>
+                    <span>Oursa ne vous noie pas sous l’info: on structure ce qui compte.</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="compare-header__actions">
+            <div class="compare-language" aria-label="Choisir la langue">
+              <button class="compare-language__current" type="button" aria-haspopup="true" aria-expanded="false">
+                FR
+                <span aria-hidden="true">⌄</span>
+              </button>
+              <div class="compare-language__menu">
+                <a href="#" aria-current="true">FR</a>
+                <a href="#">DE</a>
+                <a href="#">EN</a>
+                <a href="#">IT</a>
+              </div>
+            </div>
+            <a class="compare-login" href="index.html#hero">Me connecter</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="compare-alert">
+        <div class="compare-alert__inner">
+          <p>
+            Oursa ne vous demandera jamais vos coordonnées bancaires pour ouvrir un nouveau contrat.
+            <a href="#hero">En savoir plus.</a>
+          </p>
+          <button type="button" aria-label="Fermer l’alerte">×</button>
+        </div>
+      </div>
+
+      <main>
+        <section class="compare-page-hero guides-page-hero" id="hero">
+          <div class="compare-page-hero__inner">
+            <div class="compare-page-hero__copy">
+              <p class="compare-page-hero__eyebrow">Guides Oursa</p>
+              <h1>Des guides clairs pour comprendre avant de comparer.</h1>
+              <div class="compare-page-hero__lead">
+                <p>On simplifie les sujets qui comptent vraiment: franchise, modèles LAMal, résiliation, garanties utiles, crédit et bonnes pratiques. L’idée n’est pas de remplir une page, mais de vous aider à décider plus sereinement.</p>
+              </div>
+              <div class="compare-page-hero__actions">
+                <a class="compare-button" href="#guides-library">Voir les guides essentiels</a>
+                <a class="compare-button compare-button--ghost" href="comparer.html">Comparer les assureurs</a>
+              </div>
+            </div>
+
+            <div class="compare-page-hero__aside">
+              <article class="compare-page-hero__card compare-page-hero__card--primary">
+                <p>Dans cette page</p>
+                <strong>Des repères utiles pour comprendre plus vite et choisir plus proprement.</strong>
+                <ul>
+                  <li>Guides essentiels</li>
+                  <li>Décryptages utiles</li>
+                  <li>Bibliothèque de conseils</li>
+                </ul>
+              </article>
+
+              <article class="compare-page-hero__card">
+                <p>Notre promesse</p>
+                <strong>Moins de jargon, plus de recul et des contenus pensés pour l’action.</strong>
+                <span>Chaque guide Oursa vise un objectif simple: vous faire comprendre ce qu’il faut regarder avant de cliquer sur un devis.</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="guides-pillars" id="guides-essentials">
+          <div class="guides-pillars__inner">
+            <div class="guides-pillars__header">
+              <div>
+                <p>Formats utiles</p>
+                <h2>Trois façons simples de trouver le bon niveau de détail.</h2>
+              </div>
+              <div class="guides-pillars__lead">
+                <p>Selon votre besoin du moment, vous pouvez aller droit au but avec une checklist, prendre un peu de recul avec un décryptage, ou lire un comparatif plus guidé.</p>
+              </div>
+            </div>
+
+            <div class="guides-pillars__grid">
+              <article class="guides-pillar">
+                <span class="guides-pillar__badge">Checklist</span>
+                <h3>Aller à l’essentiel</h3>
+                <p>Les points à vérifier en deux minutes avant un devis, une résiliation ou un changement d’assureur.</p>
+              </article>
+              <article class="guides-pillar guides-pillar--accent">
+                <span class="guides-pillar__badge">Décryptage</span>
+                <h3>Comprendre ce qui change vraiment</h3>
+                <p>On remet les termes techniques, les exclusions et les options dans un ordre plus lisible.</p>
+              </article>
+              <article class="guides-pillar">
+                <span class="guides-pillar__badge">Comparatif</span>
+                <h3>Décider avec plus de recul</h3>
+                <p>Des contenus éditoriaux pensés pour faire émerger les vraies différences avant la comparaison.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="compare-insights compare-insights--page" id="guides-library">
+          <div class="compare-insights__inner">
+            <div class="compare-insights__header">
+              <div>
+                <p>Conseils Oursa</p>
+                <h2>Les guides essentiels pour ne pas comparer à l’aveugle.</h2>
+              </div>
+              <div class="compare-insights__lead">
+                <p>Ces contenus posent les bonnes bases: comprendre les différences utiles, savoir où regarder, et gagner un peu de recul avant de demander un devis.</p>
+                <a class="compare-insights__all" href="#guides-topics">Explorer la bibliothèque</a>
+              </div>
+            </div>
+
+            <div class="compare-insights__topics" id="guides-topics" aria-label="Catégories de guides">
+              <span>Santé LAMal</span>
+              <span>Caisse-maladie</span>
+              <span>Habitation</span>
+              <span>Auto</span>
+              <span>Complémentaire</span>
+              <span>Crédit</span>
+              <span>Animaux</span>
+            </div>
+
+            <div class="compare-insights__grid">
+              <article class="compare-insight compare-insight--feature">
+                <div class="compare-insight__media compare-insight__media--featured" aria-hidden="true">
+                  <span class="compare-insight__pill">Guide essentiel</span>
+                  <span class="compare-insight__time">6 min</span>
+                  <div class="compare-insight__shape compare-insight__shape--one"></div>
+                  <div class="compare-insight__shape compare-insight__shape--two"></div>
+                  <div class="compare-insight__shape compare-insight__shape--three"></div>
+                  <div class="compare-insight__card-preview">
+                    <strong>LAMal</strong>
+                    <span>Comparer prix, franchise et couverture</span>
+                  </div>
+                </div>
+                <div class="compare-insight__body">
+                  <p class="compare-insight__kicker">Santé</p>
+                  <h3>LAMal ou complémentaire : que couvre vraiment chaque assurance ?</h3>
+                  <p>Un guide clair pour comprendre ce qui relève de l’assurance de base, ce qui dépend d’une complémentaire et comment éviter les doublons inutiles.</p>
+                  <a class="compare-insight__link" href="#guides-topics">Lire le guide</a>
+                </div>
+              </article>
+
+              <div class="compare-insights__rail">
+                <article class="compare-insight compare-insight--compact">
+                  <div class="compare-insight__mini-top">
+                    <span class="compare-insight__mini-kicker">Auto</span>
+                    <span class="compare-insight__mini-time">4 min</span>
+                  </div>
+                  <h3>Comment comparer une assurance auto sans se tromper sur les garanties</h3>
+                  <p>Les critères à regarder en premier pour éviter de choisir uniquement sur le prix.</p>
+                  <a class="compare-insight__link" href="#guides-topics">Lire le guide</a>
+                </article>
+
+                <article class="compare-insight compare-insight--compact compare-insight--offset">
+                  <div class="compare-insight__mini-top">
+                    <span class="compare-insight__mini-kicker">Habitation</span>
+                    <span class="compare-insight__mini-time">3 min</span>
+                  </div>
+                  <h3>Résilier son assurance habitation : les délais à connaître</h3>
+                  <p>Une checklist simple pour savoir quand résilier, quoi envoyer et comment éviter un trou de couverture.</p>
+                  <a class="compare-insight__link" href="#guides-topics">Lire le guide</a>
+                </article>
+
+                <article class="compare-insight compare-insight--compact">
+                  <div class="compare-insight__mini-top">
+                    <span class="compare-insight__mini-kicker">Prévoyance</span>
+                    <span class="compare-insight__mini-time">5 min</span>
+                  </div>
+                  <h3>Franchise, prime, quote-part : comment lire une offre sans jargon</h3>
+                  <p>Le vocabulaire essentiel remis en ordre pour comparer plus vite et décider plus sereinement.</p>
+                  <a class="compare-insight__link" href="#guides-topics">Lire le guide</a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="guides-library-section">
+          <div class="guides-library-section__inner">
+            <div class="guides-library-section__header">
+              <div>
+                <p>Bibliothèque Oursa</p>
+                <h2>Des sujets concrets classés pour trouver plus vite ce qui vous aide.</h2>
+              </div>
+              <p>Chaque carte correspond à un angle précis: résiliation, compréhension des garanties, comparaison pratique ou lecture des coûts.</p>
+            </div>
+
+            <div class="guides-library-grid">
+              <article class="guides-library-card">
+                <div class="guides-library-card__meta">
+                  <span>Caisse-maladie</span>
+                  <span>5 min</span>
+                </div>
+                <h3>Changer de caisse-maladie: les délais à ne pas rater</h3>
+                <p>Les dates, les réflexes et les points de vigilance pour changer sereinement sans mauvaise surprise.</p>
+                <a href="#guides-library">Lire le guide</a>
+              </article>
+
+              <article class="guides-library-card guides-library-card--accent">
+                <div class="guides-library-card__meta">
+                  <span>Habitation</span>
+                  <span>4 min</span>
+                </div>
+                <h3>Que couvre vraiment une assurance habitation ?</h3>
+                <p>Ce qu’il faut distinguer entre dégâts, responsabilité civile et exclusions fréquentes avant de comparer.</p>
+                <a href="#guides-library">Lire le guide</a>
+              </article>
+
+              <article class="guides-library-card">
+                <div class="guides-library-card__meta">
+                  <span>Complémentaire</span>
+                  <span>6 min</span>
+                </div>
+                <h3>Hospitalisation privée, semi-privée ou rien du tout ?</h3>
+                <p>Comment juger l’intérêt réel d’une complémentaire selon votre profil et vos habitudes de soins.</p>
+                <a href="#guides-library">Lire le guide</a>
+              </article>
+
+              <article class="guides-library-card">
+                <div class="guides-library-card__meta">
+                  <span>Auto</span>
+                  <span>3 min</span>
+                </div>
+                <h3>Les garanties auto qui comptent vraiment au moment d’un sinistre</h3>
+                <p>Responsabilité civile, casco partielle, casco complète: on remet les repères dans le bon ordre.</p>
+                <a href="#guides-library">Lire le guide</a>
+              </article>
+
+              <article class="guides-library-card guides-library-card--soft">
+                <div class="guides-library-card__meta">
+                  <span>Crédit</span>
+                  <span>5 min</span>
+                </div>
+                <h3>Comparer un crédit sans se laisser piéger par la mensualité</h3>
+                <p>Pourquoi le coût total, la durée et le reste à vivre donnent une meilleure lecture qu’une simple accroche.</p>
+                <a href="#guides-library">Lire le guide</a>
+              </article>
+
+              <article class="guides-library-card">
+                <div class="guides-library-card__meta">
+                  <span>Animaux</span>
+                  <span>4 min</span>
+                </div>
+                <h3>Assurance animaux: quand est-ce vraiment utile ?</h3>
+                <p>Les cas où une couverture peut avoir du sens, et ceux où elle apporte peu de valeur réelle.</p>
+                <a href="#guides-library">Lire le guide</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="compare-section compare-section--cta">
+          <div class="compare-section__inner">
+            <div class="compare-cta-showcase">
+              <div class="compare-cta-showcase__content">
+                <p>Prêt à passer à l’action ?</p>
+                <h2>Comprendre d’abord, comparer ensuite, décider plus sereinement.</h2>
+                <div class="compare-cta-showcase__lead">
+                  <p>Les guides vous donnent le contexte. Le comparateur vous aide ensuite à mettre les offres face à face avec une lecture plus claire.</p>
+                </div>
+                <div class="compare-cta-showcase__actions">
+                  <a class="compare-button" href="comparer.html">Je compare maintenant</a>
+                  <a class="compare-button compare-button--ghost" href="index.html#hero">Retour à l’accueil</a>
+                </div>
+              </div>
+
+              <div class="compare-cta-showcase__visual" aria-hidden="true">
+                <div class="compare-cta-showcase__glow compare-cta-showcase__glow--left"></div>
+                <div class="compare-cta-showcase__glow compare-cta-showcase__glow--right"></div>
+                <div class="compare-cta-showcase__peek">
+                  <img class="compare-cta-showcase__bear-image" src="oursa-bear-peek-footer.png" alt="" decoding="async" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="compare-footer">
+        <div class="compare-footer__inner">
+          <div class="compare-footer__brand">
+            <a class="compare-brand" href="index.html" aria-label="Oursa.ch">
+              <span class="compare-brand__wordmark">Oursa</span>
+              <span class="compare-brand__tld">.ch</span>
+            </a>
+            <p>Comparez vos assurances plus simplement, avec une lecture claire des garanties, des prix et des options utiles.</p>
+            <div class="compare-footer__contact">
+              <a href="mailto:hello@oursa.ch">hello@oursa.ch</a>
+              <span>Lausanne, Suisse</span>
+            </div>
+          </div>
+
+          <div class="compare-footer__column">
+            <h3>Assurances</h3>
+            <a href="index.html#hero">Santé LAMal</a>
+            <a href="index.html#hero">Caisse-maladie</a>
+            <a href="index.html#hero">Complémentaire</a>
+            <a href="index.html#hero">Habitation</a>
+            <a href="index.html#hero">Auto</a>
+            <a href="index.html#hero">Animaux</a>
+          </div>
+
+          <div class="compare-footer__column">
+            <h3>Comparer</h3>
+            <a href="comparer.html#compare-reviews">Comparer les assureurs</a>
+            <a href="comparer.html#compare-reviews">Score Oursa</a>
+            <a href="comparer.html#compare-reviews">Sentiment des avis</a>
+            <a href="comparer.html#compare-methodology">Méthodologie</a>
+          </div>
+
+          <div class="compare-footer__column">
+            <h3>Guides</h3>
+            <a href="#guides-essentials">Formats utiles</a>
+            <a href="#guides-library">Guides essentiels</a>
+            <a href="#guides-topics">Catégories</a>
+            <a href="index.html#hero">Retour à l’accueil</a>
+          </div>
+        </div>
+
+        <div class="compare-footer__bottom">
+          <div class="compare-footer__bottom-inner">
+            <p>© 2026 Oursa.ch. Tous droits réservés.</p>
+            <div class="compare-footer__legal">
+              <a href="index.html#hero">Mentions légales</a>
+              <a href="index.html#hero">Confidentialité</a>
+              <a href="index.html#hero">Cookies</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
