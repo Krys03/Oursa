@@ -35,6 +35,8 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--concept-text);
   background:
+    linear-gradient(90deg, rgba(251, 253, 255, 0.98) 0%, rgba(245, 248, 253, 0.88) 46%, rgba(245, 248, 253, 0.44) 100%),
+    url("concept-hero-background-soft.png") right top / 100% auto no-repeat,
     radial-gradient(circle at top left, rgba(65, 90, 244, 0.08), transparent 28%),
     radial-gradient(circle at top right, rgba(239, 75, 85, 0.08), transparent 18%),
     linear-gradient(180deg, #fbfdff 0%, var(--concept-bg) 100%);
@@ -59,7 +61,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 60;
-  backdrop-filter: blur(16px);
+  padding: 8px 0 0;
 }
 
 .concept-header__inner,
@@ -77,8 +79,15 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  min-height: 58px;
-  padding: 6px 0;
+  width: min(calc(100% - 96px), 1510px);
+  min-height: 72px;
+  padding: 0 34px;
+  border: 1px solid rgba(221, 230, 243, 0.82);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow:
+    0 18px 46px rgba(36, 53, 95, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
 }
 
 .concept-brand {
@@ -89,13 +98,13 @@ a {
 }
 
 .concept-brand__wordmark {
-  font-size: 1.55rem;
+  font-size: 2rem;
   font-weight: 800;
   color: var(--concept-blue-deep);
 }
 
 .concept-brand__tld {
-  font-size: 0.86rem;
+  font-size: 1.02rem;
   font-weight: 700;
   color: #f1544e;
 }
@@ -103,8 +112,8 @@ a {
 .concept-nav {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.74rem;
+  gap: 34px;
+  font-size: 0.95rem;
   font-weight: 800;
   color: var(--concept-blue-deep);
 }
@@ -119,9 +128,9 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  min-height: 32px;
-  padding: 0 8px;
-  border-radius: 10px;
+  min-height: 38px;
+  padding: 0 4px;
+  border-radius: 12px;
   transition: color 180ms ease, background 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
@@ -349,7 +358,7 @@ img.concept-menu-list-icon {
 .concept-header__actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .concept-language,
@@ -357,16 +366,28 @@ img.concept-menu-list-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 34px;
-  padding: 0 13px;
-  border-radius: 12px;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 16px;
   border: 1px solid rgba(213, 223, 240, 0.96);
   background: rgba(255, 255, 255, 0.9);
   box-shadow: var(--concept-shadow-soft);
   font: inherit;
   color: var(--concept-blue-deep);
   font-weight: 800;
-  font-size: 0.78rem;
+  font-size: 0.92rem;
+}
+
+.concept-login::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  margin-right: 8px;
+  background: currentColor;
+  mask:
+    radial-gradient(circle at 50% 28%, #000 0 24%, transparent 25%),
+    radial-gradient(ellipse at 50% 95%, #000 0 46%, transparent 47%);
+  mask-repeat: no-repeat;
 }
 
 .concept-login:hover,
@@ -379,7 +400,7 @@ img.concept-menu-list-icon {
   isolation: isolate;
   display: grid;
   align-items: end;
-  min-height: calc(100svh - 58px);
+  min-height: calc(100svh - 80px);
   padding: 0;
   overflow: hidden;
 }
@@ -389,10 +410,8 @@ img.concept-menu-list-icon {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background:
-    linear-gradient(90deg, rgba(245, 248, 253, 0.98) 0%, rgba(245, 248, 253, 0.9) 38%, rgba(245, 248, 253, 0.6) 100%),
-    url("concept-hero-background.png") right center / cover no-repeat;
-  opacity: 0.96;
+  background: linear-gradient(90deg, rgba(245, 248, 253, 0.99) 0%, rgba(245, 248, 253, 0.9) 34%, rgba(245, 248, 253, 0.36) 74%, rgba(245, 248, 253, 0.16) 100%);
+  opacity: 1;
   pointer-events: none;
 }
 
@@ -410,15 +429,17 @@ img.concept-menu-list-icon {
 
 .concept-hero__inner {
   display: grid;
-  grid-template-columns: minmax(0, 1.02fr) minmax(360px, 0.9fr);
-  gap: 34px;
-  align-items: end;
-  min-height: calc(100svh - 58px);
-  padding-top: 20px;
+  grid-template-columns: minmax(0, 0.57fr) minmax(0, 0.43fr);
+  gap: 28px;
+  align-items: stretch;
+  width: min(calc(100% - 108px), 1510px);
+  min-height: calc(100svh - 80px);
+  padding-top: 18px;
 }
 
 .concept-hero__copy {
-  padding: 26px 0 34px;
+  align-self: start;
+  padding: 54px 0 22px;
 }
 
 .concept-eyebrow {
@@ -450,9 +471,9 @@ img.concept-menu-list-icon {
 }
 
 .concept-hero h1 {
-  max-width: 12ch;
-  font-size: clamp(2.8rem, 5vw, 4.35rem);
-  line-height: 1.02;
+  max-width: 11.2ch;
+  font-size: clamp(3rem, 4.15vw, 4.08rem);
+  line-height: 0.98;
   color: var(--concept-blue-deep);
 }
 
@@ -462,29 +483,125 @@ img.concept-menu-list-icon {
 
 .concept-hero__lead {
   max-width: 32rem;
-  margin: 22px 0 0;
+  margin: 16px 0 0;
   color: var(--concept-text-soft);
-  font-size: 1.15rem;
-  line-height: 1.65;
+  font-size: 1.13rem;
+  line-height: 1.55;
+}
+
+.concept-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.concept-hero__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 58px;
+  padding: 0 34px;
+  border: 1px solid rgba(221, 230, 243, 0.96);
+  border-radius: 13px;
+  color: var(--concept-blue-deep);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 14px 28px rgba(36, 53, 95, 0.08);
+  font-size: 1rem;
+  font-weight: 900;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.concept-hero__button:hover,
+.concept-hero__button:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(239, 75, 85, 0.28);
+  box-shadow: 0 18px 34px rgba(36, 53, 95, 0.13);
+}
+
+.concept-hero__button--primary {
+  min-width: 286px;
+  color: #fff;
+  border-color: rgba(239, 75, 85, 0.72);
+  background: linear-gradient(180deg, #ff3f48, #ef2935);
+  box-shadow: 0 18px 34px rgba(239, 75, 85, 0.25);
+}
+
+.concept-hero__button--secondary {
+  min-width: 238px;
+}
+
+.concept-hero__button span {
+  font-size: 1.18rem;
+  line-height: 1;
+}
+
+.concept-hero__proof {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  margin-top: 14px;
+  color: #536895;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.concept-hero__proof span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.concept-hero__proof span::before {
+  content: "✓";
+  display: grid;
+  place-items: center;
+  width: 17px;
+  height: 17px;
+  border: 1px solid rgba(23, 30, 115, 0.5);
+  border-radius: 50%;
+  color: var(--concept-blue-deep);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.concept-hero__proof span + span::after {
+  content: "";
+  order: -1;
+  width: 3px;
+  height: 3px;
+  margin-right: 2px;
+  border-radius: 50%;
+  background: rgba(23, 30, 115, 0.42);
 }
 
 .concept-tiles {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  max-width: 640px;
-  margin-top: 30px;
+  gap: 18px;
+  max-width: 930px;
+  margin-top: 18px;
 }
 
 .concept-tile {
+  position: relative;
   display: grid;
-  gap: 10px;
-  min-height: 174px;
-  padding: 18px 18px 16px;
+  grid-template-columns: 78px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  gap: 8px 18px;
+  align-items: center;
+  min-height: 164px;
+  padding: 22px 52px 28px 22px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid rgba(221, 230, 243, 0.96);
-  box-shadow: var(--concept-shadow-soft);
+  background:
+    radial-gradient(circle at 12% 50%, rgba(65, 90, 244, 0.07), transparent 34%),
+    rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(221, 230, 243, 0.82);
+  box-shadow:
+    0 18px 36px rgba(36, 53, 95, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
@@ -496,36 +613,62 @@ img.concept-menu-list-icon {
 }
 
 .concept-tile img {
-  width: 54px;
-  height: 54px;
+  grid-row: 1 / 3;
+  width: 78px;
+  height: 78px;
   object-fit: contain;
 }
 
 .concept-tile strong {
+  grid-column: 2;
+  grid-row: 1;
   display: block;
   color: var(--concept-blue-deep);
   font-size: 1rem;
   line-height: 1.24;
 }
 
+.concept-tile--popular strong {
+  margin-top: 18px;
+  padding-right: 0;
+}
+
 .concept-tile span {
+  grid-column: 2;
+  grid-row: 2;
   color: var(--concept-text-soft);
-  font-size: 0.88rem;
-  line-height: 1.5;
+  font-size: 0.78rem;
+  line-height: 1.36;
+  padding-right: 8px;
 }
 
 .concept-tile em {
-  margin-top: auto;
-  color: var(--concept-blue-deep);
+  position: absolute;
+  right: 22px;
+  bottom: 24px;
+  color: #ff2f39;
   font-style: normal;
-  font-size: 1.15rem;
+  font-size: 1.42rem;
+  line-height: 1;
   font-weight: 800;
+}
+
+.concept-tile__badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  color: var(--concept-red);
+  background: rgba(239, 75, 85, 0.1);
+  font-size: 0.7rem;
+  font-weight: 900;
 }
 
 .concept-hero__visual {
   position: relative;
   align-self: end;
-  min-height: calc(100svh - 58px);
+  min-height: calc(100svh - 80px);
 }
 
 .concept-hero__visual::after {
@@ -543,10 +686,10 @@ img.concept-menu-list-icon {
 .concept-hero__bear {
   position: absolute;
   z-index: 2;
-  right: 9%;
-  bottom: -72px;
-  width: min(520px, 84%);
-  filter: drop-shadow(0 30px 34px rgba(36, 53, 95, 0.18));
+  right: -1%;
+  bottom: -198px;
+  width: min(650px, 96%);
+  filter: drop-shadow(0 34px 42px rgba(36, 53, 95, 0.2));
 }
 
 .concept-trust,
@@ -1149,7 +1292,7 @@ img.concept-menu-list-icon {
   z-index: -2;
   background:
     linear-gradient(90deg, rgba(245, 248, 253, 0.98), rgba(245, 248, 253, 0.78)),
-    url("concept-hero-background.png") right center / cover no-repeat;
+    url("concept-hero-background-soft.png") right top / cover no-repeat;
   opacity: 0.84;
 }
 
@@ -1782,44 +1925,45 @@ img.concept-menu-list-icon {
   .concept-blog__inner,
   .concept-values__inner,
   .concept-footer__inner {
-    width: min(calc(100% - 40px), 1240px);
+    width: min(calc(100% - 72px), 1420px);
   }
 
   .concept-header__inner {
-    min-height: 58px;
-    padding: 6px 0;
+    min-height: 62px;
+    padding: 0 28px;
   }
 
   .concept-brand__wordmark {
-    font-size: 1.55rem;
+    font-size: 1.7rem;
   }
 
   .concept-nav {
-    gap: 6px;
-    font-size: 0.74rem;
+    gap: 22px;
+    font-size: 0.84rem;
   }
 
   .concept-language,
   .concept-login {
-    min-height: 34px;
-    padding: 0 13px;
+    min-height: 38px;
+    padding: 0 14px;
   }
 
   .concept-hero {
-    min-height: calc(100svh - 58px);
+    min-height: calc(100svh - 70px);
     padding: 0;
   }
 
   .concept-hero__inner {
-    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.82fr);
-    gap: 24px;
-    align-items: end;
-    min-height: calc(100svh - 58px);
+    grid-template-columns: minmax(0, 0.58fr) minmax(0, 0.42fr);
+    gap: 22px;
+    align-items: stretch;
+    min-height: calc(100svh - 70px);
     padding-top: 8px;
   }
 
   .concept-hero__copy {
-    padding: 6px 0 34px;
+    align-self: start;
+    padding: 34px 0 18px;
   }
 
   .concept-eyebrow {
@@ -1833,8 +1977,8 @@ img.concept-menu-list-icon {
   }
 
   .concept-hero h1 {
-    max-width: 11.5ch;
-    font-size: clamp(2.35rem, 4vw, 3.5rem);
+    max-width: 11.2ch;
+    font-size: clamp(2.68rem, 3.78vw, 3.62rem);
     line-height: 1;
   }
 
@@ -1845,45 +1989,84 @@ img.concept-menu-list-icon {
     line-height: 1.5;
   }
 
+  .concept-hero__actions {
+    gap: 14px;
+    margin-top: 20px;
+  }
+
+  .concept-hero__button {
+    min-height: 48px;
+    padding: 0 24px;
+    font-size: 0.9rem;
+  }
+
+  .concept-hero__button--primary {
+    min-width: 236px;
+  }
+
+  .concept-hero__button--secondary {
+    min-width: 198px;
+  }
+
+  .concept-hero__proof {
+    gap: 12px;
+    margin-top: 12px;
+    font-size: 0.78rem;
+  }
+
   .concept-tiles {
-    max-width: 620px;
-    gap: 10px;
-    margin-top: 18px;
+    max-width: 850px;
+    gap: 14px;
+    margin-top: 14px;
   }
 
   .concept-tile {
-    min-height: 142px;
-    padding: 14px 14px 12px;
-    gap: 8px;
+    grid-template-columns: 62px minmax(0, 1fr);
+    min-height: 138px;
+    padding: 17px 44px 24px 17px;
+    gap: 6px 14px;
     border-radius: 18px;
   }
 
   .concept-tile img {
-    width: 42px;
-    height: 42px;
+    width: 62px;
+    height: 62px;
   }
 
   .concept-tile strong {
-    font-size: 0.92rem;
+    font-size: 0.88rem;
   }
 
   .concept-tile span {
-    font-size: 0.8rem;
-    line-height: 1.4;
+    font-size: 0.7rem;
+    line-height: 1.28;
   }
 
   .concept-tile em {
-    font-size: 1rem;
+    right: 18px;
+    bottom: 20px;
+    font-size: 1.24rem;
+  }
+
+  .concept-tile--popular strong {
+    margin-top: 16px;
+    padding-right: 0;
+  }
+
+  .concept-tile__badge {
+    top: 12px;
+    right: 12px;
+    font-size: 0.62rem;
   }
 
   .concept-hero__visual {
-    min-height: calc(100svh - 58px);
+    min-height: calc(100svh - 70px);
   }
 
   .concept-hero__bear {
-    right: 4%;
-    bottom: -70px;
-    width: min(410px, 82%);
+    right: -2%;
+    bottom: -170px;
+    width: min(540px, 92%);
   }
 }
 
@@ -2080,9 +2263,7 @@ img.concept-menu-list-icon {
   }
 
   .concept-hero::before {
-    background:
-      linear-gradient(90deg, rgba(245, 248, 253, 0.96), rgba(245, 248, 253, 0.7)),
-      url("concept-hero-background.png") 60% bottom / cover no-repeat;
+    background: linear-gradient(90deg, rgba(245, 248, 253, 0.96), rgba(245, 248, 253, 0.58));
     opacity: 0.9;
   }
 
@@ -2122,6 +2303,30 @@ img.concept-menu-list-icon {
     line-height: 1.55;
   }
 
+  .concept-hero__actions {
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .concept-hero__button {
+    flex: 1 1 100%;
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 13px;
+    font-size: 0.9rem;
+  }
+
+  .concept-hero__button--primary,
+  .concept-hero__button--secondary {
+    min-width: 0;
+  }
+
+  .concept-hero__proof {
+    gap: 10px 12px;
+    margin-top: 14px;
+    font-size: 0.76rem;
+  }
+
   .concept-tiles {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
@@ -2130,15 +2335,50 @@ img.concept-menu-list-icon {
   }
 
   .concept-tile {
+    grid-template-columns: 1fr 18px;
+    grid-template-rows: auto auto auto auto;
     min-height: 146px;
     gap: 8px;
-    padding: 14px 13px 12px;
+    padding: 14px 40px 16px 13px;
     border-radius: 17px;
   }
 
   .concept-tile img {
+    grid-column: 1;
+    grid-row: 1;
     width: 42px;
     height: 42px;
+  }
+
+  .concept-tile strong,
+  .concept-tile span {
+    grid-column: 1 / -1;
+  }
+
+  .concept-tile strong {
+    grid-row: 2;
+  }
+
+  .concept-tile span {
+    grid-row: 3;
+  }
+
+  .concept-tile em {
+    right: 14px;
+    bottom: 14px;
+    font-size: 1.05rem;
+  }
+
+  .concept-tile__badge {
+    top: 10px;
+    right: 9px;
+    padding: 4px 7px;
+    font-size: 0.62rem;
+  }
+
+  .concept-tile--popular strong {
+    margin-top: 14px;
+    padding-right: 70px;
   }
 
   .concept-tile strong {
@@ -2487,4 +2727,78 @@ img.concept-menu-list-icon {
   .concept-tiles {
     grid-template-columns: 1fr;
   }
+}
+
+body.concept-theme-green {
+  --concept-red: #2e8b57;
+  --concept-green: #2e8b57;
+  --brand-orange: #2e8b57;
+  background:
+    linear-gradient(90deg, rgba(251, 253, 255, 0.98) 0%, rgba(245, 248, 253, 0.86) 46%, rgba(245, 248, 253, 0.36) 100%),
+    url("concept-hero-background-soft.png") right top / 100% auto no-repeat,
+    radial-gradient(circle at top left, rgba(46, 139, 87, 0.1), transparent 28%),
+    radial-gradient(circle at top right, rgba(46, 139, 87, 0.07), transparent 18%),
+    linear-gradient(180deg, #fbfdff 0%, var(--concept-bg) 100%);
+}
+
+body.concept-theme-green .concept-brand__tld {
+  color: #2e8b57;
+}
+
+body.concept-theme-green .concept-eyebrow__dot {
+  background: linear-gradient(180deg, #42b978, #2e8b57);
+  box-shadow: 0 8px 18px rgba(46, 139, 87, 0.22);
+}
+
+body.concept-theme-green .concept-hero h1 span {
+  color: #2e8b57;
+}
+
+body.concept-theme-green .concept-hero__button--primary {
+  border-color: rgba(46, 139, 87, 0.7);
+  background: linear-gradient(180deg, #39a86a, #247945);
+  box-shadow: 0 18px 34px rgba(46, 139, 87, 0.24);
+}
+
+body.concept-theme-green .concept-hero__button:hover,
+body.concept-theme-green .concept-hero__button:focus-visible {
+  border-color: rgba(46, 139, 87, 0.28);
+}
+
+body.concept-theme-green .concept-hero__proof span::before {
+  border-color: rgba(46, 139, 87, 0.62);
+  color: #2e8b57;
+}
+
+body.concept-theme-green .concept-tile {
+  background:
+    radial-gradient(circle at 12% 50%, rgba(46, 139, 87, 0.08), transparent 34%),
+    rgba(255, 255, 255, 0.86);
+}
+
+body.concept-theme-green .concept-tile:hover,
+body.concept-theme-green .concept-tile:focus-visible {
+  border-color: rgba(46, 139, 87, 0.26);
+  box-shadow: 0 18px 34px rgba(46, 139, 87, 0.11);
+}
+
+body.concept-theme-green .concept-tile em {
+  color: #2e8b57;
+}
+
+body.concept-theme-green .concept-tile__badge {
+  color: #2e8b57;
+  background: rgba(46, 139, 87, 0.11);
+}
+
+body.concept-theme-green .concept-savings__cta,
+body.concept-theme-green .concept-closing__button--primary {
+  background: linear-gradient(180deg, #39a86a, #247945);
+  box-shadow: 0 18px 34px rgba(46, 139, 87, 0.22);
+}
+
+body.concept-theme-green .concept-offer-row__price,
+body.concept-theme-green .concept-link,
+body.concept-theme-green .concept-footer__brand span {
+  color: #2e8b57;
 }
